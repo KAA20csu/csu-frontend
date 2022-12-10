@@ -1,16 +1,13 @@
 import React from 'react';
 
-import cat from '@Assets/images/cat.jpg';
-
 import './styles.less';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Slider from '../../components/Slider';
 
 const Main = () => (
-    <header>
-        <div className="main-page">
-            <h1 className="main-page__title">Главная</h1>
-            <img className="main-page__cat-img" src={cat} />
-        </div>
-    </header>
+    <div className="main-page">
+        <Slider></Slider>
+    </div>
 );
 
 export default Main;
