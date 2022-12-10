@@ -8,9 +8,9 @@ const Slider = () => {
     return (
         <Carousel controls={false}>
             <Carousel.Item>
-                <div className="carousel-slide">
+                <div className="slide-content">
                     <div className="carousel-slide text">
-                        <p className="slide-title">
+                        <p className="carousel-slide text title">
                             Срочная доставка день в день
                         </p>
                         <p className="slide-subtitle">
@@ -19,9 +19,9 @@ const Slider = () => {
                             <br></br> доставки корреспонденции и других видов
                             отправлений.
                         </p>
-                        <button className="slide-button">
-                            Заказать доставку
-                        </button>
+                        <p className="slide-button">
+                            <button>Заказать доставку</button>
+                        </p>
                     </div>
                     <div className="carousel-slide image">
                         <img src={car}></img>
@@ -29,9 +29,9 @@ const Slider = () => {
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div className="carousel-slide">
+                <div className="slide-content">
                     <div className="carousel-slide text">
-                        <p className="slide-title">
+                        <p className="carousel-slide text title">
                             Подписание договора за 1 час
                         </p>
                         <p className="slide-subtitle">
