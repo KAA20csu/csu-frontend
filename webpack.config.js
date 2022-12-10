@@ -29,6 +29,10 @@ module.exports = {
                 use: ['babel-loader'],
             },
             {
+                test: /\.less$/i,
+                use: ['style-loader', 'css-loader', 'less-loader'],
+            },
+            {
                 test: /\.css$/i,
                 use: [
                     NODE_ENV === 'development'
