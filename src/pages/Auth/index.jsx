@@ -1,10 +1,15 @@
 import React from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import './styles.less';
 
 const Auth = () => {
+    const navigate = useNavigate();
+    const navigateToMain = () => {
+        navigate('/');
+    };
     return (
         <form className="auth-form">
-            <button className="close" onClick={() => setActive(false)}>
+            <button onClick={navigateToMain} className="close">
                 <svg
                     width="26"
                     height="26"
@@ -36,11 +41,9 @@ const Auth = () => {
                     placeholder="Пароль"
                 ></input>
             </p>
-            <p>
-                <button className="auth-input__sub" type="submit">
-                    Войти
-                </button>
-            </p>
+            <button className="auth-input__sub" type="submit">
+                Войти
+            </button>
         </form>
     );
 };
