@@ -6,6 +6,7 @@ import Slider from '../Slider';
 import Header from '../../components/Header';
 import logo from '../../assets/images/logo.png';
 import phone from '../../assets/images/phone.png';
+import TablePage from '@Pages/TablePage';
 
 const Main = () => {
     const navigate = useNavigate();
@@ -44,6 +45,7 @@ const Main = () => {
                 </div>
             </Header>
             <Slider></Slider>
+            <TablePage></TablePage>
             <footer></footer>
         </div>
     );
