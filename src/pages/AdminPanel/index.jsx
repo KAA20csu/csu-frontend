@@ -2,20 +2,21 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles.less';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Slider from '../Slider';
 import Header from '../../components/Header';
+import Footer from '@Pages/Footer';
 import logo from '../../assets/images/logo.png';
 import phone from '../../assets/images/phone.png';
-import TablePage from '@Pages/TablePage';
-import Footer from '@Pages/Footer';
 
-const Main = () => {
+const AdminPanel = () => {
     const navigate = useNavigate();
     const navigateToAuth = () => {
         navigate('/auth');
     };
+    const navigateToMain = () => {
+        navigate('/auth');
+    };
     return (
-        <div className="main-page">
+        <div className="admin-panel">
             <Header>
                 <div className="header-content-inner-main">
                     <div className="header-content-inner-logo">
@@ -45,11 +46,9 @@ const Main = () => {
                     </div>
                 </div>
             </Header>
-            <Slider></Slider>
-            <TablePage></TablePage>
             <Footer></Footer>
         </div>
     );
 };
 
-export default Main;
+export default AdminPanel;
