@@ -23,27 +23,29 @@ const Auth = () => {
                     />
                 </svg>
             </button>
-            <h1 className="title">Авторизация</h1>
-            <h2 className="subtitle">
-                Введите логин и пароль, чтобы войти в личный кабинет
-            </h2>
-            <p className="input-place">
-                <input
-                    type="text"
-                    className="auth-input"
-                    placeholder="Логин"
-                ></input>
-            </p>
-            <p>
-                <input
-                    type="text"
-                    className="auth-input"
-                    placeholder="Пароль"
-                ></input>
-            </p>
-            <button className="auth-input__sub" type="submit">
-                Войти
-            </button>
+            <div className="auth-form__content">
+                <h1 className="title">Авторизация</h1>
+                <h2 className="subtitle">
+                    Введите логин и пароль, чтобы войти в личный кабинет
+                </h2>
+                <p className="input-place">
+                    <input
+                        type="text"
+                        className="auth-input"
+                        placeholder="Логин"
+                    ></input>
+                </p>
+                <p>
+                    <input
+                        type="text"
+                        className="auth-input"
+                        placeholder="Пароль"
+                    ></input>
+                </p>
+                <button className="auth-input__sub" type="submit">
+                    Войти
+                </button>
+            </div>
         </form>
     );
 };

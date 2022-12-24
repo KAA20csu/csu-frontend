@@ -4,6 +4,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Main from '@Pages/Main';
 import ModalWindow from '@Components/ModalWindow';
 import Auth from '@Pages/Auth';
+import AdminPanel from '@Pages/AdminPanel';
 
 const App = () => {
     const navigate = useNavigate();
@@ -18,17 +19,15 @@ const App = () => {
                     path="/auth"
                     element={
                         <div>
-                            <Main />
+                            {window.screen.width > 420 ? <Main /> : <></>}
                             <ModalWindow>
                                 <Auth></Auth>
                             </ModalWindow>
                         </div>
                     }
                 />
+                <Route path="/admin" element={<AdminPanel />} />
             </Routes>
-            <footer>
-                <a>Footer</a>
-            </footer>
         </body>
     );
 };
