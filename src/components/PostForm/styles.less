@@ -1,0 +1,111 @@
+.postform-block {
+    width: 70%;
+    padding-top: 174px;
+    padding-right: 135px;
+    padding-bottom: 140px;
+    padding-left: 135px;
+    background-color: white;
+    .postform-text-block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .counter {
+        width: 100%;
+        text-align: right;
+        color:rgba(208, 201, 214, 1);
+        font-weight: 400;
+        font-size: 12px;
+      }
+      .text-area {
+        padding: 0;
+        margin-top: 74px;
+        height: 144px;
+        border-radius: 6px;
+        border: 1px solid #23415E;
+        padding: 16px 22px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #D0C9D6;
+        resize: none;
+        padding-right: 700px;
+        //overflow-x: hidden;
+        border-color: rgba(35, 65, 94, 1);
+        border-width: 1px;
+      }
+    }
+    ::-webkit-scrollbar {
+      background: rgba(208, 201, 214, 0.3);
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(208, 201, 214, 1);
+      border-radius: 6px;
+    }
+    .postform-title-block {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    
+    .postform-description-block {
+        margin-top: 18px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .post-btn{
+        margin-top: 114px;
+      width: 240px;
+      height: 52px;
+      background: #E5E31F;
+      border-radius: 10px;
+      color: #2A4F71;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      border: none;
+    }
+    .postform-add-img-block{
+        padding-top: 30px;
+        width: 738px;
+        font-weight: 600;
+        a {
+          width: 738px;
+          
+        }
+        img {
+            width: 21px;
+            height: 18.38px;
+            vertical-align: middle;
+        }
+      }
+}
+@media screen and (max-width: 768px){
+    .postform-block {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      .text-area{
+        margin-top: 74px;
+        height: 144px;
+        width: 738px;
+      }
+    }
+}
+@media screen and (max-width: 420px){
+  .postform-block {
+    padding-left: 15px;
+    padding-right: 15px;
+    .text-area {
+      margin-top: 74px;
+      height: 144px;
+      width: 345px;
+    }
+  }
+}
