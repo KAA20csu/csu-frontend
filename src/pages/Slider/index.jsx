@@ -10,41 +10,47 @@ const Slider = () => {
             <Carousel controls={false}>
                 <Carousel.Item>
                     <div className="slide-content">
-                        <div className="carousel-slide text">
-                            <p className="slide-title">
+                        <div className="slide-content__text">
+                            <span className="slide-content__text__title">
                                 Срочная доставка день в день
-                            </p>
-                            <p className="slide-subtitle">
+                            </span>
+                            <span className="slide-content__text__subtitle">
                                 Для тех, кто не может ждать, у нас есть услуга
                                 cрочной курьерской доставки корреспонденции и
                                 видов отправлений.
-                            </p>
-                            <button className="slide-button">
+                            </span>
+                            <button className="slide-content__text__button">
                                 Заказать доставку
                             </button>
                         </div>
-                        <div className="carousel-slide image">
-                            <img className="car" src={car}></img>
+                        <div className="slide-content__image">
+                            <img
+                                className="slide-content__image__car"
+                                src={car}
+                            ></img>
                         </div>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className="slide-content">
-                        <div className="carousel-slide text">
-                            <p className="slide-title">
+                        <div className="slide-content__text">
+                            <span className="slide-content__text__title">
                                 Подписание договора за 1 час
-                            </p>
-                            <p className="slide-subtitle">
+                            </span>
+                            <span className="slide-content__text__subtitle">
                                 В течение часа наш курьер заберет вашу посылку и
                                 подпишет с Вами<br></br> договор о
                                 предоставлении услуг.
-                            </p>
-                            <button className="slide-button">
+                            </span>
+                            <button className="slide-content__text__button">
                                 Заказать доставку
                             </button>
                         </div>
-                        <div className="carousel-slide image">
-                            <img className="doc" src={doc}></img>
+                        <div className="slide-content__image">
+                            <img
+                                className="slide-content__image__doc"
+                                src={doc}
+                            ></img>
                         </div>
                     </div>
                 </Carousel.Item>

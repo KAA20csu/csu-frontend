@@ -1,20 +1,29 @@
 .postform-block {
-    width: 70%;
+    width: 100%;
     padding-top: 174px;
     padding-right: 135px;
     padding-bottom: 140px;
     padding-left: 135px;
     background-color: white;
-    .postform-text-block {
+    .overflow_error {
+      margin-top: 35px;
+      font-weight: 400;
+      font-size: 16px;
+      color:rgba(255, 35, 35, 1);
+    }
+    .postform-block__textarea-block {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 70%;
       .counter {
         width: 100%;
         text-align: right;
         color:rgba(208, 201, 214, 1);
         font-weight: 400;
         font-size: 12px;
+      }
+      .current.overflow {
+        color: red;
       }
       .text-area {
         padding: 0;
@@ -29,8 +38,6 @@
         line-height: 20px;
         color: #D0C9D6;
         resize: none;
-        padding-right: 700px;
-        //overflow-x: hidden;
         border-color: rgba(35, 65, 94, 1);
         border-width: 1px;
       }
@@ -43,14 +50,14 @@
       background: rgba(208, 201, 214, 1);
       border-radius: 6px;
     }
-    .postform-title-block {
+    .postform-block__title-block {
         font-style: normal;
         font-weight: 800;
         font-size: 38px;
         line-height: 46px;
     }
     
-    .postform-description-block {
+    .postform-block__description-block {
         margin-top: 18px;
         font-style: normal;
         font-weight: 400;
@@ -71,7 +78,7 @@
       line-height: 22px;
       border: none;
     }
-    .postform-add-img-block{
+    .postform-block__image-adding-block{
         padding-top: 30px;
         width: 738px;
         font-weight: 600;
