@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import Footer from '@Pages/Footer';
 import logo from '../../assets/images/logo.png';
 import phone from '../../assets/images/phone.png';
+import PostForm from '@Components/PostForm';
 
 const AdminPanel = () => {
     const navigate = useNavigate();
@@ -46,6 +47,11 @@ const AdminPanel = () => {
                     </div>
                 </div>
             </Header>
+            <PostForm
+                title="Добавить новость"
+                description="Введите текст новости, а также приложите изображение (размер: 270х270px)"
+                placeholder="Введите текст новости"
+            ></PostForm>
             <Footer></Footer>
         </div>
     );
