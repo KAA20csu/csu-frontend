@@ -1,0 +1,74 @@
+@import "@Constants/constants";
+
+.slide {
+    width: @slider-width;
+    flex: 0 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide:not(:last-child) {
+    margin-right: 105%;
+}
+
+.slide__left {
+    width: 660px;
+    height: 580px;
+    flex: 0 0 auto;
+}
+
+.slide__title {
+    width: 90vw;
+    max-width: 100%;
+    margin-top: 120px;
+    font-size: 64px;
+    font-weight: 700;
+    @media (max-width:@small-width) {
+        font-size: 38px;
+    }
+}
+
+.yellow-button.slide__button {
+    background-color: #E5E31F;
+    text-align: center;
+    border-radius: 10px;
+    color: rgba(42, 79, 113, 1);
+    font-weight: 600;
+    height: 52px;
+    width: 240px;
+}
+
+.slide__description {
+    width: 90vw;
+    max-width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.slide__button {
+    background-color: #E5E31F;
+    text-align: center;
+    border-radius: 10px;
+    color: rgba(42, 79, 113, 1);
+    font-weight: 600;
+    height: 52px;
+    width: 240px;
+    margin-top: 87px;
+    @media (max-width:@large-width) {
+        display: none;
+    }
+    @media (max-width:@small-width) {
+        display: inline;
+    }
+}
+
+.slide__img {
+    vertical-align: bottom;
+    right: 0px;
+    @media (max-width:@large-width) {
+        display: none;
+    }
+}
+
